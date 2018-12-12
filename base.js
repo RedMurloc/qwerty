@@ -104,7 +104,7 @@ var DragManager = new function() {
         // запомним, что элемент нажат на текущих координатах pageX/pageY
         dragObject.downX = e.pageX;
         dragObject.downY = e.pageY;
-        console.log("smth works!!");
+        console.log("smth works!!!");
 
         return false;
     }
