@@ -19,7 +19,7 @@ function print_list_as_butons(buttonsList) {
 
 document.getElementById('buttonRun1').onclick = function run () {
 
-    var xhr = new XMLHttpRequest();
+/*    var xhr = new XMLHttpRequest();
 
     xhr.open('GET', 'http://localhost:8080/vote', false);
 
@@ -35,8 +35,8 @@ document.getElementById('buttonRun1').onclick = function run () {
         //output_text.value += xhr.responseText;
         //output.value += "1";
     }
-
-    var depList = xhr.responseText.split('\n');
+*/
+    var depList = 'a b c d'.split(' ') //xhr.responseText.split('\n');
 
     console.log('-----');
     console.log(depList);
@@ -73,6 +73,43 @@ function ready(){
 }
 
 
+
+/* 
+//создание попап
+
+function tableOpen(select_char){
+    var newWin = window.open('/', 'example', 'width=600,height=400');
+
+    alert(newWin.location.href); // (*) about:blank, загрузка ещё не началась
+
+    newWin.onload = function() {
+
+      // создать div в документе нового окна
+      var div = newWin.document.createElement('div'),
+          body = newWin.document.body;
+
+      div.innerHTML = 'Добро пожаловать!'+select_char
+      div.style.fontSize = '30px'
+
+      // вставить первым элементом в body нового окна
+      body.insertBefore(div, body.firstChild);
+      console.log('onLoad_start');
+    }
+    console.log('onload_end');
+}
+//обработка нажатия кнопки
+document.getElementById('buttonRun2').onclick = function run () {
+
+    tableOpen('a');
+
+    console.log('-----');
+    console.log(tableOpen);
+    console.log('1');
+
+    console.log("pam_pam0");
+
+}
+*/
 // Drag'N'Drop
 
 var buttonsList = document.getElementById("buttonsListElement");
@@ -104,7 +141,7 @@ var DragManager = new function() {
         // запомним, что элемент нажат на текущих координатах pageX/pageY
         dragObject.downX = e.pageX;
         dragObject.downY = e.pageY;
-        console.log("smth works!!!");
+        console.log("smth works!!");
 
         return false;
     }
