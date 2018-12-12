@@ -1,0 +1,248 @@
+
+
+.area{
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    overflow: auto;
+    min-width: 300px;
+    padding: 2vh 1vw;
+    min-height: 100vh;
+}
+
+.panel {
+    background-color: #253759;
+    width: 30%;
+    min-width: 30%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.page {
+    left: 32%;
+    top: 0;
+    position: fixed;
+    background-color: white;
+    width: 68%;
+    min-width: 300px;
+}
+
+
+
+.area_old {
+    position: fixed;
+    float: left;
+    display: inline-block;
+    min-width: 300px;
+    min-height: 100vh;
+    height:auto;
+    overflow:auto;
+}
+
+.panel_old {
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 30vw;
+	background-color: #253759;
+}
+
+.page_old {
+	background-color: #1F1F1F;
+	display: inline-block;
+    width: auto;
+
+}
+
+.header {
+	text-align: left;
+	font-size: 20pt;
+	font-family: Arial;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin: 0 auto;
+	display: block;
+    width: 95%;
+}
+
+.subheader {
+	text-align: left;
+	color: #A1A1A1;
+	font-weight: normal;
+    margin: 0 auto;
+	display: block;
+    width: 95%;
+}
+
+.controlsBlock {
+	margin: 5%;
+	display: block;
+}
+
+
+.output {
+
+	resize: none;
+	border: none;
+    display: block;
+    position: relative;
+    width: 93%;
+    margin: 0 auto;
+    float: left;
+    padding-left: 2vw;
+
+}
+
+.input {
+    outline: 2px solid #253759;
+    text-align: left;
+    font-size: 17pt;
+    font-family: Arial;
+    color: black;
+    padding: 1%;
+}
+
+#out {
+    text-align: left;
+    font-size: 20pt;
+    font-family: Arial;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#out1 {
+    text-align: left;
+    font-size: 17pt;
+    font-family: Arial;
+    color: black;
+    height: 500px;
+}
+
+#ct {
+    overflow:scroll;
+    width:100%;
+    height: 550px;
+}
+
+#returnButton{
+    margin-bottom: 3%;
+    background-color: #D0CEBA;
+}
+
+
+.buttonsDiv{
+	position: relative;
+    display: block;
+	margin: 0 auto;
+    padding-top: 5%;
+    width: 95%;
+}
+
+#buttonsListElement {
+    overflow: scroll;
+}
+
+.button {
+	background-color: #FFFFFF;
+	border: none;
+	color: #253759;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	transition: all 0.5s;
+	cursor: pointer;
+	width:100%;
+    margin-top: 1%;
+}
+
+.draggableElement {
+    background-color: #FFFFFF;
+    border: 3px solid #253759; /* Цвет границы */
+    color: #253759;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    transition: all 0.5s;
+    cursor: pointer;
+    width:100%;
+    max-width: 400px;
+    margin-top: 1%;
+}
+
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '»';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+
+
+
+
+.button1 {
+    background-color: #253759; /* Green */
+    border: none;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    transition: all 0.5s;
+    cursor: pointer;
+    width:95%;
+    margin-top: 1%;
+}
+
+.button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button1 span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button1:hover span {
+    padding-right: 25px;
+}
+
+.button1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
