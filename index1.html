@@ -2,30 +2,59 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link href="style.css?101" rel="stylesheet">
+		<link href="style.css?461514440" rel="stylesheet">
 		<title>Моделирование конвейера</title>
 	</head>
 	<body>
+	<div class="main_inf">
 		<div class="area panel">
-			<div class="header">Портал для демонстрации POC-решений</div>
-			<div class="subheader"></div>
+			<div class="header">Демонстрация POC-решения</div>
+			<div class="subheader">_</div>
 			<div class="subheader">МКС 183</div>
 			<div class="buttonsDiv">
-				<button id="returnButton" class="button" onclick="window.location.href='/index1.html'"><span>Главная</span></button>
+				<button id="returnButton" class="button" onclick="window.location.href='/index1.html'"><span>Сброс</span></button>
+				<button id="addButton" class="button greenButton"><span>Добавить</span></button>
+				<div id="controls">
+				</div>
 			</div>
-			<div id="ct">
+<!--			<div id="ct">
 				<div id="buttonsListElement" class="buttonsDiv">
-					<button id="buttonRun1" class="button"><span>Список полей</span></button>
-					<button id="buttonRun2" class="button"><span>Добавить табличку</span></button>
+					<button id="buttonRun1" class="button whiteButton"><span>Список</span></button>
+				</div>
+			</div>-->
+		</div>
+		<div class="boxButtons">
+			<button id="boxButtonSave" class="boxButtons__item whiteButton"><span>Сохранить</span></button>
+			<button id="boxButtonCalc" class="boxButtons__item whiteButton"><span>Построить</span></button>
+			<button id="boxButtonDel" class="boxButtons__item whiteButton"><span>Удалить</span></button>
+		</div>
+		<!--<div class=" page">
+			<div id="out4" class="box droppable">
+			</div>
+		</div>-->
+		<div id="main_window">
+			<div id="left_pane">
+				<h4>Список элементов</h5>
+				<div id="available_metrics_filter">
+					<ul id="available_metrics_list"> </ul>
+				</div>
+			</div>
+			<div id="right_pane">
+				<h4>Droppable</h5>
+				<div id="selected_metrics">
+					<ul id="selected_metrics_list">
+						<li id="next_metric">Вывести</li>
+					</ul>
+				</div>
+				<div id="remove_metric">
+					Удалить
 				</div>
 			</div>
 		</div>
-		<div class="area page">
-			<textarea id="out" class="output" disabled></textarea>
-			<textarea id="out1" class="output" disabled></textarea>
-		</div>
-		<script src="base.js?109">
+	</div>
+		<script src="base.js?32412855">
 		</script>
 
 	</body>
 </html>
+
