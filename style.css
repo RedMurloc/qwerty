@@ -9,6 +9,7 @@
     min-width: 300px;
     padding: 2vh 1vw;
     min-height: 100vh;
+    background-color: #A1A1A1;
 }
 
 .panel {
@@ -24,9 +25,9 @@
     left: 32%;
     top: 0;
     position: fixed;
-    background-color: white;
     width: 68%;
     min-width: 300px;
+    padding: 2vh 0;
 }
 
 
@@ -83,18 +84,20 @@
 }
 
 
-.output {
-
+.box {
 	resize: none;
 	border: none;
     display: block;
-    position: relative;
-    width: 93%;
+    position: fixed;
+    width: 29%;
     margin: 0 auto;
     float: left;
-    padding-left: 2vw;
-
+    min-width: 29%;
+    min-height: 87.5vh;
+    margin-top: 8vh;
+    outline: 20px solid #253759;
 }
+
 
 .input {
     outline: 2px solid #253759;
@@ -105,23 +108,6 @@
     padding: 1%;
 }
 
-#out {
-    text-align: left;
-    font-size: 20pt;
-    font-family: Arial;
-    color: black;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-#out1 {
-    text-align: left;
-    font-size: 17pt;
-    font-family: Arial;
-    color: black;
-    height: 500px;
-}
-
 #ct {
     overflow:scroll;
     width:100%;
@@ -129,8 +115,29 @@
 }
 
 #returnButton{
+    border: none;
+    margin-bottom: 3%;
+    background-color: #EBB3A9;
+}
+
+#boxButtonDel{
+    background-color: #EBB3A9;
+}
+
+.greenButton{
+    border: none;
     margin-bottom: 3%;
     background-color: #D0CEBA;
+}
+
+.whiteButton{
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.controlButtons{
+    outline-offset: -5px;
+    border: 5px solid #253759;
 }
 
 
@@ -142,13 +149,41 @@
     width: 95%;
 }
 
+
+.boxButtons {
+    background-color: #253759;
+    display: block;
+    position: fixed;
+    width: 29%;
+    margin: 0 auto;
+    float: left;
+    min-width: 29%;
+    margin-left: 32%;
+    outline: 12px solid #253759;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.boxButtons__item
+{
+    color: #253759;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    transition: all 0.5s;
+    cursor: pointer;
+    width:30%;
+    margin: 1%;
+}
+
 #buttonsListElement {
     overflow: scroll;
 }
 
 .button {
-	background-color: #FFFFFF;
-	border: none;
 	color: #253759;
 	padding: 15px 32px;
 	text-align: center;
@@ -173,7 +208,7 @@
     transition: all 0.5s;
     cursor: pointer;
     width:100%;
-    max-width: 400px;
+    max-width: 420px;
     margin-top: 1%;
 }
 
@@ -245,4 +280,120 @@
 .button1:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+
+.boxButtons__item span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.boxButtons__item span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.boxButtons__item:hover span {
+    padding-right: 25px;
+}
+
+.boxButtons__item:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+
+#main_window {
+    float: left;
+    width: 600px;
+    margin-left: 33%;
+    margin-top:  7%; 
+    border: 1px solid gray;
+    overflow: hidden;
+    background-color: rgb(250, 250, 250);
+    margin-right: 20px;
+}
+
+#left_pane {
+    float: left;
+    width: 50%;
+}
+
+#right_pane {
+    float: left;
+    width: 50%;
+}
+
+ 
+
+#available_metrics_filter {
+    margin: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+    background-color: rgb(230, 230, 230);
+}
+
+#available_metrics_list {
+    padding: 0px;
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: white;
+}
+
+#available_metrics_list li {
+    margin-top: -1px;
+    border: 1px solid gray;
+    padding: 5px;
+    list-style-type: none;
+    background-color: white;
+}
+
+
+#selected_metrics_list {
+    margin: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: white;
+}
+
+#selected_metrics_list li {
+    margin-top: -1px;
+    border: 1px solid gray;
+    padding: 5px;
+    list-style-type: none;
+    background-color: white;
+}
+
+#selected_metrics_list li:last-child {
+    border: 1px dotted gray;
+}
+
+#next_metric {
+    color: gray;
+}
+
+#remove_metric {
+    margin: 5px;
+    border: 1px dotted gray;
+    padding: 5px;
+    color: gray;
+    text-align: center;
+    background-color: white;
+}
+
+.draggable {
+    position: relative;
+    cursor: default;
+}
+
+.dragOver {
+    background-color: rgb(232, 232, 255) !important;
 }
